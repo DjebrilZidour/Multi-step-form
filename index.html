@@ -6,19 +6,27 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Multi-step form</title>
+  <title>multi-step-form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
   <!-- Sidebar start -->
+  <section id="side-bar">
+    <ul>
+      <li><h3>1</h3><div><h5>STEP 1</h5><p>Your info</p></div></li>
+      <li><h3>2</h3><div><h5>STEP 2</h5><p>Select plan</p></div></li>
+      <li><h3>3</h3><div><h5>STEP 3</h5><p>Add-ons</p></div></li>
+      <li><h3>4</h3><div><h5>STEP 4</h5><p>Summary</p></div></li>
+    </ul>
+  </section>
 
-  Step 1
+  <!-- Step 1
   Your info
 
   Step 2
@@ -28,13 +36,29 @@
   Add-ons
 
   Step 4
-  Summary
+  Summary -->
 
   <!-- Sidebar end -->
 
   <!-- Step 1 start -->
+  <section id="step1-display">
+    <h1>Personal info</h1>
 
-  Personal info
+    <p>Please provide your name, email address, and phone number.</p>
+    <div id="personal-information">
+      <h3>Name</h3>
+      <input type="text" placeholder="e.g. Stephen King">
+  
+      <h3>Email Address</h3>
+      <input type="email" placeholder="e.g. stephenking@lorem.com">
+  
+      <h3>Phone Number</h3>
+      <input type="number" placeholder=" e.g. +1 234 567 890">
+    </div>
+
+    <button class="next-step-btn">Next Step</button>
+  </section>
+  <!-- Personal info
   Please provide your name, email address, and phone number.
 
   Name
@@ -46,17 +70,55 @@
   Phone Number
   e.g. +1 234 567 890
 
-  Next Step
-
+  Next Step -->
   <!-- Step 1 end -->
 
-  <!-- Step 2 start -->
 
-  Select your plan
+  <!-- Step 2 start -->
+  <section id="step2-display">
+    <h1>Select your plan</h1>
+    <p>You have the option of monthly or yearly billing.</p>
+    <div id="plans">
+
+      <div class="plan" id="arcade">
+        <img src="./assets/images/icon-arcade.svg" alt="">
+        <h2>Arcade</h2>
+        <h5>$90/yr</h5>
+        <p>2 months free</p>
+      </div>
+
+      <div class="plan" id="advanced">
+        <img src="./assets/images/icon-advanced.svg" alt="">
+        <h2>Advanced</h2>
+        <h5>$120/yr</h5>
+        <p>2 months free</p>
+      </div>
+
+      <div class="plan" id="pro">
+        <img src="./assets/images/icon-pro.svg" alt="">
+        <h2>Pro</h2>
+        <h5>$150/yr</h5>
+        <p>2 months free</p>
+      </div>
+
+    </div>
+
+    <div id="monthly-yearly-selector">
+      <h2>monthly</h2>
+      <div id="btn-container">
+        <div id="btn"></div>
+      </div>
+      <h2>yearly</h2>
+    </div>
+
+    <button class="go-back-btn">Go Back</button>
+    <button class="next-step-btn">Next Step</button>
+
+  </section>
+  <!-- Select your plan
   You have the option of monthly or yearly billing.
 
-  Arcade
-  $9/mo
+ 
 
   Advanced
   $12/mo
@@ -68,12 +130,22 @@
   Yearly
 
   Go Back
-  Next Step
+  Next Step -->
 
   <!-- Step 2 end -->
 
-  <!-- Step 3 start -->
 
+  <!-- Step 3 start -->
+  <section id="step2-display">
+    <h1>Select your plan</h1>
+    <p>You have the option of monthly or yearly billing.</p>
+
+
+
+    <button class="go-back-btn">Go Back</button>
+    <button class="next-step-btn">Next Step</button>
+
+  </section>
   Pick add-ons
   Add-ons help enhance your gaming experience.
 
@@ -94,6 +166,8 @@
 
   <!-- Step 3 end -->
 
+
+
   <!-- Step 4 start -->
 
   Finishing up
@@ -107,6 +181,8 @@
   Confirm
 
   <!-- Step 4 end -->
+
+
 
   <!-- Step 5 start -->
 
